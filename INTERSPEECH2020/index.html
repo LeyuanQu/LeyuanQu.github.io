@@ -20,7 +20,7 @@ INTERSPEECH2020
 <div class="container">
   <p>&nbsp;</p>
   <p><span class="venue">Under review of INTERSPEECH 2020</span></p>
-  <p><span class="title">Title</span></p>
+  <p><span class="title">Multimodal Target Speech Separation with Voice and Face References</span></p>
   <br />
   <table border="0" align="center" class="authors">
     <tr align="center" valign="bottom">
@@ -35,7 +35,7 @@ INTERSPEECH2020
   <tr>
     <td width="97" align="center" style="padding:0 0px 0 0px;"><a href="https://www.inf.uni-hamburg.de/en/inst/ab/wtm.html" target="_blank">Knowledge Technology Group (WTM)</a></td>
   </tr>
-  <th width="40%" align="center">Department of Informatics, University of Hamburg, Germany</th>
+  <th width="40%" align="center">Department of Informatics, University of Hamburg</th>
   </table>
 
 
@@ -46,7 +46,7 @@ INTERSPEECH2020
   </table>
 
   <p><span class="section">Abstract</span> </p>
-  <p>Abstract here.<br />
+  <p style="font-size:17px;">Target speech separation refers to isolating target speech from a multi-speaker mixture signal by conditioning on auxiliary information of target speaker, e.g. speaker voice. Different from the mainstream audio-visual approaches which usually require simultaneous visual streams as additional input, e.g. the corresponding lip movement sequences, in this paper, we explore to what extent a single face profile of target speaker can help to get expected clean speech. Since comparing to the simultaneous visual sequence, a face image is easier to get by pre-enrollment or on websites, which enables the system to easily generalize to devices without cameras. To this end, in addition to voice embeddings used in previous work, we incorporate face embeddings extracted from a pretrained model for face recognition into the target speech separation system. The experimental results indicate that a pre-enrolled face image is able to benefit for separating expected speech signals. Additionally, face information is complementary to voice reference, further improvement can be achieved when combing both face and voice embeddings.<br />
     &nbsp;<br />
   </p>
   <br />
@@ -54,10 +54,16 @@ INTERSPEECH2020
   <a><img src="images/model-architecture.png" width="100%" id="architecture"/></a>
 
   <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <p><span class="section">Demos</span> </p>
 
 
-    <table width="100%" border="0" align="center">
+    <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
     <tr>
       <th width="20%" align="center" rowspan="2">Video</th>
       <th width="20%" class="tg-0lax" rowspan="6"></th>
@@ -82,7 +88,7 @@ INTERSPEECH2020
         </video>
       </td>
       <td class="tg-c3ow"></td>
-      <th width="20%" align="center"><br>Reference embedding</th>
+      <th width="20%" align="center"><br>Reference embeddings</th>
       <th width="20%" align="center"><br>Separated wav</th>
     </tr>
     <tr>
@@ -102,24 +108,17 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
     <tr>
-      <th width="40%" align="center">Voice + Face</th>
+      <th width="40%" align="center"></th>
       <!-- <th width="20%" align="center"></th> -->
-      <td align="center" width="16%"><img src="face/0.png" width="100" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/0.wav" type="audio/wav" />
-              Does not support </audio></td>
-      <!-- <td align="center"><audio controls class="audio-player" preload="metadata">
-              <source src="images/teaser/wav/0024Daniel_Craig_L1Ltxf1NeL8_0000007.wav" type="audio/wav" />
-              Does not support </audio></td> -->
+      <td align="center" width="16%"><strong>Voice + Face</strong></td>
       <td align="center"><audio controls class="audio-player" preload="metadata">
               <source src="face-voice/0.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
 
-  <br />
-  <br />
 
-  <table width="100%" border="0" align="center">
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
     <tr>
       <th width="20%" align="center" rowspan="2">Video</th>
       <th width="20%" class="tg-0lax" rowspan="6"></th>
@@ -144,7 +143,7 @@ INTERSPEECH2020
         </video>
       </td>
       <td class="tg-c3ow"></td>
-      <th width="20%" align="center"><br>Reference embedding</th>
+      <th width="20%" align="center"><br>Reference embeddings</th>
       <th width="20%" align="center"><br>Separated wav</th>
     </tr>
     <tr>
@@ -164,11 +163,8 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
     <tr>
+      <th width="40%" align="center"></th>
       <th width="40%" align="center">Voice + Face</th>
-      <!-- <th width="20%" align="center"></th> -->
-      <td align="center" width="16%"><img src="face/1.png" width="100" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/1.wav" type="audio/wav" />
-              Does not support </audio></td>
       <!-- <td align="center"><audio controls class="audio-player" preload="metadata">
               <source src="images/teaser/wav/0024Daniel_Craig_L1Ltxf1NeL8_0000007.wav" type="audio/wav" />
               Does not support </audio></td> -->
@@ -177,11 +173,9 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
   </table>
-  <br />
-  <br />
 
 
-  <table width="100%" border="0" align="center">
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
     <tr>
       <th width="20%" align="center" rowspan="2">Video</th>
       <th width="20%" class="tg-0lax" rowspan="6"></th>
@@ -206,7 +200,7 @@ INTERSPEECH2020
         </video>
       </td>
       <td class="tg-c3ow"></td>
-      <th width="20%" align="center"><br>Reference embedding</th>
+      <th width="20%" align="center"><br>Reference embeddings</th>
       <th width="20%" align="center"><br>Separated wav</th>
     </tr>
     <tr>
@@ -226,11 +220,11 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
     <tr>
+      <th width="40%" align="center"></th>
       <th width="40%" align="center">Voice + Face</th>
-      <!-- <th width="20%" align="center"></th> -->
-      <td align="center" width="16%"><img src="face/2.png" width="100" />  <audio controls="controls" style="width: 110px;">
+<!--       <td align="center" width="16%"><img src="face/2.png" width="100" />  <audio controls="controls" style="width: 110px;">
               <source src="ref-wav/2.wav" type="audio/wav" />
-              Does not support </audio></td>
+              Does not support </audio></td> -->
       <!-- <td align="center"><audio controls class="audio-player" preload="metadata">
               <source src="images/teaser/wav/0024Daniel_Craig_L1Ltxf1NeL8_0000007.wav" type="audio/wav" />
               Does not support </audio></td> -->
@@ -239,8 +233,6 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
   </table>
-  <br>
-  <br>
 
   <table width="100%" border="0" align="center">
     <tr>
@@ -267,7 +259,7 @@ INTERSPEECH2020
         </video>
       </td>
       <td class="tg-c3ow"></td>
-      <th width="20%" align="center"><br>Reference embedding</th>
+      <th width="20%" align="center"><br>Reference embeddings</th>
       <th width="20%" align="center"><br>Separated wav</th>
     </tr>
     <tr>
@@ -287,11 +279,11 @@ INTERSPEECH2020
               Does not support </audio></td>
     </tr>
     <tr>
+      <th width="40%" align="center"></th>
       <th width="40%" align="center">Voice + Face</th>
-      <!-- <th width="20%" align="center"></th> -->
-      <td align="center" width="16%"><img src="face/3.png" width="100" />  <audio controls="controls" style="width: 110px;">
+<!--       <td align="center" width="16%"><img src="face/3.png" width="100" />  <audio controls="controls" style="width: 110px;">
               <source src="ref-wav/3.wav" type="audio/wav" />
-              Does not support </audio></td>
+              Does not support </audio></td> -->
       <!-- <td align="center"><audio controls class="audio-player" preload="metadata">
               <source src="images/teaser/wav/0024Daniel_Craig_L1Ltxf1NeL8_0000007.wav" type="audio/wav" />
               Does not support </audio></td> -->
@@ -309,7 +301,7 @@ INTERSPEECH2020
   <br>
 
   <p><span class="section">More samples</span> </p>
-  <table width="100%" border="0" align="center">
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
@@ -341,9 +333,7 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/4.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/4.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/4.wav" type="audio/wav" />
               Does not support </audio></td>
@@ -351,16 +341,13 @@ INTERSPEECH2020
   </table>
 
 
-
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -386,24 +373,20 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/5.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/5.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/5.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
 
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -429,23 +412,20 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/6.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/6.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/6.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -471,23 +451,20 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/7.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/7.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/7.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -513,23 +490,20 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/8.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/8.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/8.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -555,23 +529,20 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/9.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/9.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/9.wav" type="audio/wav" />
               Does not support </audio></td>
     </tr>
   </table>
-  <br>
-  <br>
-  <table width="100%" border="0" align="center">
-    <tr>
+
+  <table style="border-bottom: 1px dashed #cdd0d5;" width="100%" border="0" align="center">
+<!--     <tr>
       <th align="center">Mixed wav</th>
       <th align="center">Target wav</th>
       <th align="center">Reference</th>
       <th align="center">Separated wav</th>
-    </tr>
+    </tr> -->
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
@@ -597,9 +568,7 @@ INTERSPEECH2020
     <tr>
       <td class="tg-0lax"></td>
       <td class="tg-0lax"></td>
-      <td align="center" width="16%"><img src="face/10.png" width="80" />  <audio controls="controls" style="width: 110px;">
-              <source src="ref-wav/10.wav" type="audio/wav" />
-              Does not support </audio></td>
+      <th width="40%" align="center">Voice + Face</th>
       <td align="center"><audio controls class="audio-player" preload="metadata" style="width: 200px;">
               <source src="face-voice/10.wav" type="audio/wav" />
               Does not support </audio></td>
@@ -696,16 +665,21 @@ This is because our model is trained to capture visual features (related to age,
     </tr>
   </tbody>
 </table> -->
+
 <p class="section">Acknowledgment</p>
+
   <table border="0">
     <tbody>
       <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td> 
+        <td  style="font-size:17px;">
+        The authors gratefully acknowledge the partial support from the China Scholarship Council (CSC), the German Research Foundation DFG under project CML (TRR 169), and the European Union under project SECURE (No 642667).
+
 <br/>
     &nbsp;<br/>
   </td>
+
   </tr>
   </tbody>
   </table>
