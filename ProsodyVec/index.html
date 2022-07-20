@@ -31,209 +31,160 @@
 
 <div class="content-container">
     <script src="wavesurfer.js"></script>
-    <div class="content-title">Neutral to Amused</div>
-
-    <table border="0" class="inlineTable">
-        <tr>
-            <th>Source</th>
-            <th>Generated</th>
-            <th>Target</th>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_1"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_1 = WaveSurfer.create({ container: '#src_waveform_1', waveColor: 'violet', progressColor: 'purple' });
-                    src_1.load('./audio/neutral-amused/src_1.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_1"></div>
-                <button id="vc_hubert_1_header" class="play-button-demo btn btn-primary" onclick="gen_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_1 = WaveSurfer.create({ container: '#gen_waveform_1', waveColor: 'violet', progressColor: 'purple' });
-                    gen_1.load('./audio/neutral-amused/gen_1.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_1"></div>
-                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_1 = WaveSurfer.create({ container: '#trg_waveform_1', waveColor: 'violet', progressColor: 'purple' });
-                    trg_1.load('./audio/neutral-amused/trg_1.wav'); </script>
-           </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_2"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_2 = WaveSurfer.create({ container: '#src_waveform_2', waveColor: 'violet', progressColor: 'purple' });
-                    src_2.load('./audio/neutral-amused/src_2.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_2"></div>
-                <button id="vc_hubert_1_header" class="play-button-demo btn btn-primary" onclick="gen_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_2 = WaveSurfer.create({ container: '#gen_waveform_2', waveColor: 'violet', progressColor: 'purple' });
-                    gen_2.load('./audio/neutral-amused/gen_2.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_2"></div>
-                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_2 = WaveSurfer.create({ container: '#trg_waveform_2', waveColor: 'violet', progressColor: 'purple' });
-                    trg_2.load('./audio/neutral-amused/trg_2.wav'); </script>
-           </td>
-        </tr>
-    </table>
-
-    </br></br>
-    <div class="content-title">Neutral to Sleepy</div>
-
-    <table border="0" class="inlineTable">
-        <tr>
-            <th>Source</th>
-            <th>Generated</th>
-            <th>Target</th>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_3"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_3 = WaveSurfer.create({ container: '#src_waveform_3', waveColor: 'violet', progressColor: 'purple' });
-                    src_3.load('./audio/neutral-sleepy/src_3.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_3"></div>
-                <button id="vc_hubert_3_header" class="play-button-demo btn btn-primary" onclick="gen_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_3 = WaveSurfer.create({ container: '#gen_waveform_3', waveColor: 'violet', progressColor: 'purple' });
-                    gen_3.load('./audio/neutral-sleepy/gen_3.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_3"></div>
-                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_3 = WaveSurfer.create({ container: '#trg_waveform_3', waveColor: 'violet', progressColor: 'purple' });
-                    trg_3.load('./audio/neutral-sleepy/trg_3.wav'); </script>
-           </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_4"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_4.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_4 = WaveSurfer.create({ container: '#src_waveform_4', waveColor: 'violet', progressColor: 'purple' });
-                    src_4.load('./audio/neutral-sleepy/src_4.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_4"></div>
-                <button id="vc_hubert_3_header" class="play-button-demo btn btn-primary" onclick="gen_4.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_4 = WaveSurfer.create({ container: '#gen_waveform_4', waveColor: 'violet', progressColor: 'purple' });
-                    gen_4.load('./audio/neutral-sleepy/gen_4.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_4"></div>
-                <button id="vc_hubert_4_header" class="play-button-demo btn btn-primary" onclick="trg_4.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_4 = WaveSurfer.create({ container: '#trg_waveform_4', waveColor: 'violet', progressColor: 'purple' });
-                    trg_4.load('./audio/neutral-sleepy/trg_4.wav'); </script>
-           </td>
-        </tr>
-    </table>
-
-    </br></br>
     <div class="content-title">Neutral to Angry</div>
 
-    <table border="0" class="inlineTable">
+    <!-- style="table-layout:fixed;" -->
+    <!-- style="width:90%" -->
+    <table  border="1" class="inlineTable">
         <tr>
-            <th>Source</th>
-            <th>Generated</th>
+            <th>Neutral</th>
+            <th>CycleGAN-EVC</th>
+            <th>StarGAN-EVC</th>
+            <th>Seq2Seq-EVC</th>
+            <th>Emovox</th>
+            <th>ProsodyVec (Our)</th>
             <th>Target</th>
         </tr>
+
+
         <tr>
-            <td>
-                <div id="src_waveform_5"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_5.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_5 = WaveSurfer.create({ container: '#src_waveform_5', waveColor: 'violet', progressColor: 'purple' });
-                    src_5.load('./audio/neutral-angry/src_5.wav'); </script>
+             <td>
+                <div id="neutral2angry11"></div>
+                <button id="vc_hubert_2_header2" class="play-button-demo btn btn-primary" onclick="trg_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_2 = WaveSurfer.create({ container: '#neutral2angry11', waveColor: 'violet', progressColor: 'purple' });
+                    trg_2.load('./Audios/source/1.wav'); </script>
            </td>
             <td>
-                <div id="gen_waveform_5"></div>
-                <button id="vc_hubert_5_header" class="play-button-demo btn btn-primary" onclick="gen_5.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_5 = WaveSurfer.create({ container: '#gen_waveform_5', waveColor: 'violet', progressColor: 'purple' });
-                    gen_5.load('./audio/neutral-angry/gen_5.wav'); </script>
+                <div id="neutral2angry12"></div>
+                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_1.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_1 = WaveSurfer.create({ container: '#neutral2angry12', waveColor: 'violet', progressColor: 'purple' });
+                    src_1.load('./Audios/cyclegan/1.wav'); </script>
            </td>
             <td>
-                <div id="trg_waveform_5"></div>
-                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_5.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_5 = WaveSurfer.create({ container: '#trg_waveform_5', waveColor: 'violet', progressColor: 'purple' });
-                    trg_5.load('./audio/neutral-angry/trg_5.wav'); </script>
+                <div id="neutral2angry13"></div>
+                <button id="vc_hubert_1_header" class="play-button-demo btn btn-primary" onclick="gen_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_1 = WaveSurfer.create({ container: '#neutral2angry13', waveColor: 'violet', progressColor: 'purple' });
+                    gen_1.load('./Audios/stargan/1.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry14"></div>
+                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_1 = WaveSurfer.create({ container: '#neutral2angry14', waveColor: 'violet', progressColor: 'purple' });
+                    trg_1.load('./Audios/seq2seq/1.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry15"></div>
+                <button id="resynthesis_hubert__header2" class="play-button-demo btn btn-primary" onclick="src_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_2 = WaveSurfer.create({ container: '#neutral2angry15', waveColor: 'violet', progressColor: 'purple' });
+                    src_2.load('./Audios/emovox/1.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry16"></div>
+                <button id="vc_hubert_1_header2" class="play-button-demo btn btn-primary" onclick="gen_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_2 = WaveSurfer.create({ container: '#neutral2angry16', waveColor: 'violet', progressColor: 'purple' });
+                    gen_2.load('./Audios/generated/1.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry17"></div>
+                <button id="vc_hubert_3_header2" class="play-button-demo btn btn-primary" onclick="src_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_3 = WaveSurfer.create({ container: '#neutral2angry17', waveColor: 'violet', progressColor: 'purple' });
+                    src_3.load('./Audios/target/1.wav'); </script>
            </td>
         </tr>
+
         <tr>
-            <td>
-                <div id="src_waveform_6"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_6.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_6 = WaveSurfer.create({ container: '#src_waveform_6', waveColor: 'violet', progressColor: 'purple' });
-                    src_6.load('./audio/neutral-angry/src_6.wav'); </script>
+             <td>
+                <div id="neutral2angry21"></div>
+                <button id="vc_hubert_2_header2" class="play-button-demo btn btn-primary" onclick="trg_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_2 = WaveSurfer.create({ container: '#neutral2angry21', waveColor: 'violet', progressColor: 'purple' });
+                    trg_2.load('./Audios/source/2.wav'); </script>
            </td>
             <td>
-                <div id="gen_waveform_6"></div>
-                <button id="vc_hubert_5_header" class="play-button-demo btn btn-primary" onclick="gen_6.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_6 = WaveSurfer.create({ container: '#gen_waveform_6', waveColor: 'violet', progressColor: 'purple' });
-                    gen_6.load('./audio/neutral-angry/gen_6.wav'); </script>
+                <div id="neutral2angry22"></div>
+                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_1.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_1 = WaveSurfer.create({ container: '#neutral2angry22', waveColor: 'violet', progressColor: 'purple' });
+                    src_1.load('./Audios/cyclegan/2.wav'); </script>
            </td>
             <td>
-                <div id="trg_waveform_6"></div>
-                <button id="vc_hubert_6_header" class="play-button-demo btn btn-primary" onclick="trg_6.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_6 = WaveSurfer.create({ container: '#trg_waveform_6', waveColor: 'violet', progressColor: 'purple' });
-                    trg_6.load('./audio/neutral-angry/trg_6.wav'); </script>
+                <div id="neutral2angry23"></div>
+                <button id="vc_hubert_1_header" class="play-button-demo btn btn-primary" onclick="gen_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_1 = WaveSurfer.create({ container: '#neutral2angry23', waveColor: 'violet', progressColor: 'purple' });
+                    gen_1.load('./Audios/stargan/2.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry24"></div>
+                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_1 = WaveSurfer.create({ container: '#neutral2angry24', waveColor: 'violet', progressColor: 'purple' });
+                    trg_1.load('./Audios/seq2seq/2.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry25"></div>
+                <button id="resynthesis_hubert__header2" class="play-button-demo btn btn-primary" onclick="src_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_2 = WaveSurfer.create({ container: '#neutral2angry25', waveColor: 'violet', progressColor: 'purple' });
+                    src_2.load('./Audios/emovox/2.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry26"></div>
+                <button id="vc_hubert_1_header2" class="play-button-demo btn btn-primary" onclick="gen_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_2 = WaveSurfer.create({ container: '#neutral2angry26', waveColor: 'violet', progressColor: 'purple' });
+                    gen_2.load('./Audios/generated/2.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry27"></div>
+                <button id="vc_hubert_3_header2" class="play-button-demo btn btn-primary" onclick="src_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_3 = WaveSurfer.create({ container: '#neutral2angry27', waveColor: 'violet', progressColor: 'purple' });
+                    src_3.load('./Audios/target/2.wav'); </script>
            </td>
         </tr>
+
+        <tr>
+             <td>
+                <div id="neutral2angry31"></div>
+                <button id="vc_hubert_2_header2" class="play-button-demo btn btn-primary" onclick="trg_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_2 = WaveSurfer.create({ container: '#neutral2angry31', waveColor: 'violet', progressColor: 'purple' });
+                    trg_2.load('./Audios/source/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry32"></div>
+                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_1.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_1 = WaveSurfer.create({ container: '#neutral2angry32', waveColor: 'violet', progressColor: 'purple' });
+                    src_1.load('./Audios/cyclegan/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry33"></div>
+                <button id="vc_hubert_1_header" class="play-button-demo btn btn-primary" onclick="gen_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_1 = WaveSurfer.create({ container: '#neutral2angry33', waveColor: 'violet', progressColor: 'purple' });
+                    gen_1.load('./Audios/stargan/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry34"></div>
+                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_1.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var trg_1 = WaveSurfer.create({ container: '#neutral2angry34', waveColor: 'violet', progressColor: 'purple' });
+                    trg_1.load('./Audios/seq2seq/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry35"></div>
+                <button id="resynthesis_hubert__header2" class="play-button-demo btn btn-primary" onclick="src_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_2 = WaveSurfer.create({ container: '#neutral2angry35', waveColor: 'violet', progressColor: 'purple' });
+                    src_2.load('./Audios/emovox/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry36"></div>
+                <button id="vc_hubert_1_header2" class="play-button-demo btn btn-primary" onclick="gen_2.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var gen_2 = WaveSurfer.create({ container: '#neutral2angry36', waveColor: 'violet', progressColor: 'purple' });
+                    gen_2.load('./Audios/generated/3.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2angry37"></div>
+                <button id="vc_hubert_3_header2" class="play-button-demo btn btn-primary" onclick="src_3.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var src_3 = WaveSurfer.create({ container: '#neutral2angry37', waveColor: 'violet', progressColor: 'purple' });
+                    src_3.load('./Audios/target/3.wav'); </script>
+           </td>
+        </tr>
+ 
+
+
     </table>
-
-    </br></br>
-    <div class="content-title">Neutral to Disgusted</div>
-
-    <table border="0" class="inlineTable">
-        <tr>
-            <th>Source</th>
-            <th>Generated</th>
-            <th>Target</th>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_7"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_7.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_7 = WaveSurfer.create({ container: '#src_waveform_7', waveColor: 'violet', progressColor: 'purple' });
-                    src_7.load('./audio/neutral-disgusted/src_7.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_7"></div>
-                <button id="vc_hubert_7_header" class="play-button-demo btn btn-primary" onclick="gen_7.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_7 = WaveSurfer.create({ container: '#gen_waveform_7', waveColor: 'violet', progressColor: 'purple' });
-                    gen_7.load('./audio/neutral-disgusted/gen_7.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_7"></div>
-                <button id="vc_hubert_2_header" class="play-button-demo btn btn-primary" onclick="trg_7.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_7 = WaveSurfer.create({ container: '#trg_waveform_7', waveColor: 'violet', progressColor: 'purple' });
-                    trg_7.load('./audio/neutral-disgusted/trg_7.wav'); </script>
-           </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="src_waveform_8"></div>
-                <button id="resynthesis_hubert__header" class="play-button-demo btn btn-primary" onclick="src_8.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var src_8 = WaveSurfer.create({ container: '#src_waveform_8', waveColor: 'violet', progressColor: 'purple' });
-                    src_8.load('./audio/neutral-disgusted/src_8.wav'); </script>
-           </td>
-            <td>
-                <div id="gen_waveform_8"></div>
-                <button id="vc_hubert_7_header" class="play-button-demo btn btn-primary" onclick="gen_8.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var gen_8 = WaveSurfer.create({ container: '#gen_waveform_8', waveColor: 'violet', progressColor: 'purple' });
-                    gen_8.load('./audio/neutral-disgusted/gen_8.wav'); </script>
-           </td>
-            <td>
-                <div id="trg_waveform_8"></div>
-                <button id="vc_hubert_8_header" class="play-button-demo btn btn-primary" onclick="trg_8.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var trg_8 = WaveSurfer.create({ container: '#trg_waveform_8', waveColor: 'violet', progressColor: 'purple' });
-                    trg_8.load('./audio/neutral-disgusted/trg_8.wav'); </script>
-           </td>
-        </tr>
-    </table>
-
 
     </br></br>
     <div class="content-title">Decomposition Ablation</div>
