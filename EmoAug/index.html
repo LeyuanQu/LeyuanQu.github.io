@@ -8,26 +8,37 @@
     </head>
     <body>
 <div class="container">
-    <div id="text1">Coming soon</br>...</div>
+    <div id="text1">Data Augmentation with Unsupervised Speaking  </br>Style Transfer
+    for Speech Emotion Recognition</div>
     <div id="intro">
         <br>
-        <p>
-        Authors
+        <p><font size=6>
+        Leyuan Qu<sup>1</sup>, Taihao Li<sup>1</sup>, Cornelius Weber<sup>2</sup> and Stefan Wermter<sup>2</sup></font>
       </p>
-       <p>In <i>Preprint</i>
-      </p>
+       <!-- <p>In <i>Preprint</i></p> -->
+       <p>1. Institute of Artificial Intelligence, Zhejiang Lab</p>
+       <p>2. Department of Informatics, University of Hamburg</p>
        <p>
-            [<a href="https:.pdf">Paper</a>]
+            <!-- [<a href="https:.pdf">Paper</a>] -->
         </p>
     </div>
 </div>
 <div class="content-container">
     <!-- <img src="model.png" style="width:50%"> -->
+    <p><font size=5>Abstract</font></p>
     <p>
-    Abstract here.
+    Currently, the performance of Speech Emotion Recognition (SER) systems is mainly constrained by the absence of large-scale labelled corpora. Data augmentation is regarded as a promising approach, which borrows methods from Automatic Speech Recognition (ASR), for instance, perturbation on speed and pitch, or generating emotional speech utilizing generative adversarial networks. In this paper, we propose EmoAug, a novel style transfer model to augment emotion expressions, in which a semantic encoder and a paralinguistic encoder represent verbal and non-verbal information respectively. Additionally, a decoder reconstructs speech signals by conditioning on the aforementioned two information flows in an unsupervised fashion. Once training is completed, EmoAug enriches expressions of emotional speech in different prosodic attributes, such as stress, rhythm and intensity, by feeding different styles into the paralinguistic encoder. In addition, we can also generate similar numbers of samples for each class to tackle the data imbalance issue. Experimental results on the IEMOCAP dataset demonstrate that EmoAug can successfully transfer different speaking styles while retaining the speaker identity and semantic content. Furthermore, we train a SER model with data augmented by EmoAug and show that it not only surpasses the state-of-the-art supervised and self-supervised methods but also overcomes overfitting problems caused by data imbalance. Some audio samples can be found on our demo website.
     </p>
 </div>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+<div class="content-container">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">Mel-spectrogram Comparsion</div>
+    <a><center><img src="mel.JPG" width="50%" id="architecture"/></center></a>
+</div>
 
 <div class="content-container">
     <script src="wavesurfer.js"></script>
@@ -102,12 +113,51 @@
     </table>
 
     </br></br>
+
+    </br></br>
+</div>
+
+<div class="content-container">
+    <script src="wavesurfer.js"></script>
     <div class="content-title">More Samples</div>
     
     <table border="1" class="inlineTable">
         <tr>
             <th>Original</th>
             <th colspan="4">Converted</th>
+        </tr>
+
+       <tr>
+             <td>
+                <div id="neutral2happy41"></div>
+                <button style="width:180px" id="neutral2happyheader41" class="play-button-demo btn btn-primary" onclick="neural2happywavsurfer41.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neural2happywavsurfer41 = WaveSurfer.create({ container: '#neutral2happy41', waveColor: 'violet', progressColor: 'purple' });
+                    neural2happywavsurfer41.load('./Audios/Ses04F_script01_1_F019.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2happy42"></div>
+                <button style="width:180px" id="neutral2happyheader42" class="play-button-demo btn btn-primary" onclick="neural2happywavsurfer42.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neural2happywavsurfer42 = WaveSurfer.create({ container: '#neutral2happy42', waveColor: 'violet', progressColor: 'purple' });
+                    neural2happywavsurfer42.load('./Audios/Ses04F_script01_1_F019-Ses04F_script02_2_F002-ang.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2happy43"></div>
+                <button style="width:180px" id="neutral2happyheader43" class="play-button-demo btn btn-primary" onclick="neutral2happyheader43.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neutral2happyheader43 = WaveSurfer.create({ container: '#neutral2happy43', waveColor: 'violet', progressColor: 'purple' });
+                    neutral2happyheader43.load('./Audios/Ses04F_script01_1_F019-Ses04F_script03_2_F025-ang.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2happy44"></div>
+                <button style="width:180px" id="neutral2happyheader44" class="play-button-demo btn btn-primary" onclick="neutral2happyheader44.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neutral2happyheader44 = WaveSurfer.create({ container: '#neutral2happy44', waveColor: 'violet', progressColor: 'purple' });
+                    neutral2happyheader44.load('./Audios/Ses04F_script01_1_F019-Ses04M_script02_2_F009-ang.wav'); </script>
+           </td>
+            <td>
+                <div id="neutral2happy45"></div>
+                <button style="width:180px" id="neutral2happyheader45" class="play-button-demo btn btn-primary" onclick="neutral2happyheader45.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neutral2happyheader45 = WaveSurfer.create({ container: '#neutral2happy45', waveColor: 'violet', progressColor: 'purple' });
+                    neutral2happyheader45.load('./Audios/Ses04F_script01_1_F019-Ses04M_script03_2_F041-ang.wav'); </script>
+           </td>
         </tr>
 
        <tr>
@@ -213,39 +263,6 @@
 
        <tr>
              <td>
-                <div id="neutral2happy41"></div>
-                <button style="width:180px" id="neutral2happyheader41" class="play-button-demo btn btn-primary" onclick="neural2happywavsurfer41.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neural2happywavsurfer41 = WaveSurfer.create({ container: '#neutral2happy41', waveColor: 'violet', progressColor: 'purple' });
-                    neural2happywavsurfer41.load('./Audios/Ses04F_script01_1_F019.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2happy42"></div>
-                <button style="width:180px" id="neutral2happyheader42" class="play-button-demo btn btn-primary" onclick="neural2happywavsurfer42.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neural2happywavsurfer42 = WaveSurfer.create({ container: '#neutral2happy42', waveColor: 'violet', progressColor: 'purple' });
-                    neural2happywavsurfer42.load('./Audios/Ses04F_script01_1_F019-Ses04F_script02_2_F002-ang.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2happy43"></div>
-                <button style="width:180px" id="neutral2happyheader43" class="play-button-demo btn btn-primary" onclick="neutral2happyheader43.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2happyheader43 = WaveSurfer.create({ container: '#neutral2happy43', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2happyheader43.load('./Audios/Ses04F_script01_1_F019-Ses04F_script03_2_F025-ang.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2happy44"></div>
-                <button style="width:180px" id="neutral2happyheader44" class="play-button-demo btn btn-primary" onclick="neutral2happyheader44.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2happyheader44 = WaveSurfer.create({ container: '#neutral2happy44', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2happyheader44.load('./Audios/Ses04F_script01_1_F019-Ses04M_script02_2_F009-ang.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2happy45"></div>
-                <button style="width:180px" id="neutral2happyheader45" class="play-button-demo btn btn-primary" onclick="neutral2happyheader45.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2happyheader45 = WaveSurfer.create({ container: '#neutral2happy45', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2happyheader45.load('./Audios/Ses04F_script01_1_F019-Ses04M_script03_2_F041-ang.wav'); </script>
-           </td>
-        </tr>
-
-       <tr>
-             <td>
                 <div id="neutral2happy51"></div>
                 <button style="width:180px" id="neutral2happyheader51" class="play-button-demo btn btn-primary" onclick="neural2happywavsurfer51.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neural2happywavsurfer51 = WaveSurfer.create({ container: '#neutral2happy51', waveColor: 'violet', progressColor: 'purple' });
@@ -286,7 +303,9 @@
 </div>
 
 <div class="content-container">
-    Acknowledgement.  
+    <p><font size=5>Acknowledgement</font></p>
+    <p>
+    This work was supported in part by the CML, LeCareBot and MoReSpace Projects funded by the DFG and the Major Scientific Project of Zhejiang Lab under Grant No.2020KB0AC01.
 </div>
 </body>
 </html>
