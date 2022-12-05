@@ -8,7 +8,7 @@
     </head>
     <body>
 <div class="container">
-    <div id="text1">Prosody2Vec: Disentangling Prosody Representations via Discrete Speech Units and Unsupervised Speech Reconstruction</br></div>
+    <div id="text1">Disentangling Prosody Representations with Unsupervised Speech Reconstruction</br></div>
     <div id="intro">
         <br>
         <p><font size=6>
@@ -39,9 +39,22 @@
 <iframe width="700" height="500" src="https://www.youtube.com/embed/WVS6m5sVmb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+
+
+<div class="content-container", style="text-align: center;">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">Five Generation Tasks</div>
+    <img src="tasks.JPG" style="width:80%">
+    <p> We show the five generation tasks presented in our paper as follows.
+    </p>
+
+</div>
+
+
+
 <div class="content-container">
     <script src="wavesurfer.js"></script>
-    <div class="content-title">Audio Demo</div>
+    <div class="content-title">1. Audio Demo for Emotional Voice Conversion (EVC)</div>
     <br>
     <div class="content-title">Neutral to Angry</div>
 
@@ -523,6 +536,11 @@
     </table>
 
     </br></br>
+</div>
+
+<div class="content-container", style="text-align: center;">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">2. Audio Demo for Emotion Style Transfer</div>
     <div class="content-title">Other to Angry</div>
     
     <table style="width:70%" border="1" align="center" class="inlineTable">
@@ -830,12 +848,172 @@
            </td>
         </tr>
     </table>
-
-
 </div>
 
+
+
+<div class="content-container", style="text-align: center;">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">3. Audio Demo for Cross-lingual Emotional Voice Conversion (EVC)</div>
+    <table  border="1" class="inlineTable">
+        <tr>
+            <th>Original</th>
+            <th>Prosody2Vec (Angry)</th>
+            <th>German Reference (Angry)</th>
+        </tr>
+
+       <tr>
+             <td>
+                <div id="crossneutral2angry11"></div>
+                <button style="width:180px" id="crossneutral2angryheader11" class="play-button-demo btn btn-primary" onclick="crossneural2angrywavsurfer11.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneural2angrywavsurfer11 = WaveSurfer.create({ container: '#crossneutral2angry11', waveColor: 'violet', progressColor: 'purple' });
+                    crossneural2angrywavsurfer11.load('./Audios/German/2.wav'); </script>
+           </td>
+            <td>
+                <div id="crossneutral2angry12"></div>
+                <button style="width:180px" id="crossneutral2angryheader12" class="play-button-demo btn btn-primary" onclick="crossneural2angrywavsurfer12.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneural2angrywavsurfer12 = WaveSurfer.create({ container: '#crossneutral2angry12', waveColor: 'violet', progressColor: 'purple' });
+                    crossneural2angrywavsurfer12.load('./Audios/German/0013_000016-gene-200-ft-6225k.wav'); </script>
+           </td>
+            <td>
+                <div id="crossneutral2angry13"></div>
+                <button style="width:180px" id="crossneutral2angryheader13" class="play-button-demo btn btn-primary" onclick="crossneutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneutral2angryheader13 = WaveSurfer.create({ container: '#crossneutral2angry13', waveColor: 'violet', progressColor: 'purple' });
+                    crossneutral2angryheader13.load('./Audios/German/12a05Wb.wav'); </script>
+           </td>
+            
+        </tr>
+        <tr>
+             <td>
+                <div id="crossneutral2angry21"></div>
+                <button style="width:180px" id="crossneutral2angryheader11" class="play-button-demo btn btn-primary" onclick="crossneural2angrywavsurfer21.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneural2angrywavsurfer21 = WaveSurfer.create({ container: '#crossneutral2angry21', waveColor: 'violet', progressColor: 'purple' });
+                    crossneural2angrywavsurfer21.load('./Audios/German/3.wav'); </script>
+           </td>
+            <td>
+                <div id="crossneutral2angry22"></div>
+                <button style="width:180px" id="crossneutral2angryheader12" class="play-button-demo btn btn-primary" onclick="crossneural2angrywavsurfer22.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneural2angrywavsurfer22 = WaveSurfer.create({ container: '#crossneutral2angry22', waveColor: 'violet', progressColor: 'purple' });
+                    crossneural2angrywavsurfer22.load('./Audios/German/0013_000020-gene-200-ft-6225k.wav'); </script>
+           </td>
+            <td>
+                <div id="crossneutral2angry23"></div>
+                <button style="width:180px" id="crossneutral2angryheader13" class="play-button-demo btn btn-primary" onclick="crossneutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var crossneutral2angryheader13 = WaveSurfer.create({ container: '#crossneutral2angry23', waveColor: 'violet', progressColor: 'purple' });
+                    crossneutral2angryheader13.load('./Audios/German/12a05Wb.wav'); </script>
+           </td>
+            
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+<div class="content-container", style="text-align: center;">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">4. Audio Demo for Speaking Style Transfer</div>
+    <table  border="1" class="inlineTable">
+        <tr>
+            <th>Original Angry</th>
+            <th>Converted Angry 1</th>
+            <th>Converted Angry 2</th>
+            <th>Converted Angry 3</th>
+        </tr>
+
+       <tr>
+             <td>
+                <div id="speakingneutral2angry11"></div>
+                <button style="width:180px" id="speakingneutral2angryheader11" class="play-button-demo btn btn-primary" onclick="speakingneural2angrywavsurfer11.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var speakingneural2angrywavsurfer11 = WaveSurfer.create({ container: '#speakingneutral2angry11', waveColor: 'violet', progressColor: 'purple' });
+                    speakingneural2angrywavsurfer11.load('./Audios/speaking style transfer/Ses01M_script03_2_M022.wav'); </script>
+           </td>
+            <td>
+                <div id="speakingneutral2angry12"></div>
+                <button style="width:180px" id="speakingneutral2angryheader12" class="play-button-demo btn btn-primary" onclick="speakingneural2angrywavsurfer12.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var speakingneural2angrywavsurfer12 = WaveSurfer.create({ container: '#speakingneutral2angry12', waveColor: 'violet', progressColor: 'purple' });
+                    speakingneural2angrywavsurfer12.load('./Audios/speaking style transfer/Ses01M_script03_2_M022-Ses01M_impro05_M023-ang.wav'); </script>
+           </td>
+            <td>
+                <div id="speakingneutral2angry13"></div>
+                <button style="width:180px" id="speakingneutral2angryheader13" class="play-button-demo btn btn-primary" onclick="speakingneutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var speakingneutral2angryheader13 = WaveSurfer.create({ container: '#speakingneutral2angry13', waveColor: 'violet', progressColor: 'purple' });
+                    speakingneutral2angryheader13.load('./Audios/speaking style transfer/Ses01M_script03_2_M022-Ses01M_impro05_M028-ang.wav'); </script>
+           </td>
+           <td>
+                <div id="speakingneutral2angry14"></div>
+                <button style="width:180px" id="speakingneutral4angryheader14" class="play-button-demo btn btn-primary" onclick="speakingneural2angrywavsurfer14.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var speakingneural2angrywavsurfer14 = WaveSurfer.create({ container: '#speakingneutral2angry14', waveColor: 'violet', progressColor: 'purple' });
+                    speakingneural2angrywavsurfer14.load('./Audios/speaking style transfer/Ses01M_script03_2_M022-Ses01M_script03_2_M040-ang.wav'); </script>
+           </td>
+
+    </table>
+</div>
+
+
+
+
+<div class="content-container", style="text-align: center;">
+    <script src="wavesurfer.js"></script>
+    <div class="content-title">5. Audio Demo for Singing Style Transfer</div>
+    <table  border="1" class="inlineTable">
+        <tr>
+            <th>Original</th>
+            <th>Generated</th>
+            <th>Reference Singing Voice</th>
+        </tr>
+
+       <tr>
+             <td>
+                <div id="singingneutral2angry11"></div>
+                <button style="width:180px" id="singingneutral2angryheader11" class="play-button-demo btn btn-primary" onclick="singingneural2angrywavsurfer11.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneural2angrywavsurfer11 = WaveSurfer.create({ container: '#singingneutral2angry11', waveColor: 'violet', progressColor: 'purple' });
+                    singingneural2angrywavsurfer11.load('./Audios/singing style transfer/happy3-0013_000004-male_13_2-gene-200-ft-6225k-ref.wav'); </script>
+           </td>
+            <td>
+                <div id="singingneutral2angry12"></div>
+                <button style="width:180px" id="singingneutral2angryheader12" class="play-button-demo btn btn-primary" onclick="singingneural2angrywavsurfer12.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneural2angrywavsurfer12 = WaveSurfer.create({ container: '#singingneutral2angry12', waveColor: 'violet', progressColor: 'purple' });
+                    singingneural2angrywavsurfer12.load('./Audios/singing style transfer/0013_000004-male_13_2-gene-200-ft-6225k.wav'); </script>
+           </td>
+            <td>
+                <div id="singingneutral2angry13"></div>
+                <button style="width:180px" id="singingneutral2angryheader13" class="play-button-demo btn btn-primary" onclick="singingneutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneutral2angryheader13 = WaveSurfer.create({ container: '#singingneutral2angry13', waveColor: 'violet', progressColor: 'purple' });
+                    singingneutral2angryheader13.load('./Audios/singing style transfer/male_13_2.wav'); </script>
+           </td>
+        </tr>
+    <tr>
+        <td>
+                <div id="singingneutral2angry21"></div>
+                <button style="width:180px" id="singingneutral2angryheader11" class="play-button-demo btn btn-primary" onclick="singingneural2angrywavsurfer21.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneural2angrywavsurfer21 = WaveSurfer.create({ container: '#singingneutral2angry21', waveColor: 'violet', progressColor: 'purple' });
+                    singingneural2angrywavsurfer21.load('./Audios/singing style transfer/angry2-0013_000017-male-gene-200-ft-6225k.wav-ref.wav'); </script>
+           </td>
+            <td>
+                <div id="singingneutral2angry22"></div>
+                <button style="width:180px" id="singingneutral2angryheader12" class="play-button-demo btn btn-primary" onclick="singingneural2angrywavsurfer22.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneural2angrywavsurfer22 = WaveSurfer.create({ container: '#singingneutral2angry22', waveColor: 'violet', progressColor: 'purple' });
+                    singingneural2angrywavsurfer22.load('./Audios/singing style transfer/0013_000017-male-gene-200-ft-6225k.wav'); </script>
+           </td>
+            <td>
+                <div id="singingneutral2angry23"></div>
+                <button style="width:180px" id="singingneutral2angryheader13" class="play-button-demo btn btn-primary" onclick="singingneutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var singingneutral2angryheader13 = WaveSurfer.create({ container: '#singingneutral2angry23', waveColor: 'violet', progressColor: 'purple' });
+                    singingneutral2angryheader13.load('./Audios/singing style transfer/male.wav'); </script>
+           </td>
+        </tr>
+
+
+
+    </table>
+</div>
+
+
+
 <div class="content-container">
-    Acknowledgement.  
+    Acknowledgement: this work was supported in part by the CML, LeCareBot and MoReSpace Projects funded by the DFG and the Major Scientific Project of Zhejiang Lab under Grant No.2020KB0AC01.
 </div>
 </body>
 </html>
