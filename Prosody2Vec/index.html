@@ -12,11 +12,12 @@
     <div id="intro">
         <br>
         <p><font size=6>
-        Leyuan Qu<sup>1</sup>, Taihao Li<sup>1</sup>, Cornelius Weber<sup>2</sup> and Stefan Wermter<sup>2</sup></font>
+        Leyuan Qu<sup>1</sup>, Taihao Li<sup>1</sup>, Cornelius Weber<sup>2</sup>, Theresa Pekarek-Rosin<sup>2</sup>, Fuji Ren<sup>3</sup> and Stefan Wermter<sup>2</sup></font>
       </p>
        <!-- <p>In <i>Preprint</i></p> -->
        <p>1. Institute of Artificial Intelligence, Zhejiang Lab</p>
        <p>2. Department of Informatics, University of Hamburg</p>
+       <p>3. School of Computer Science and Engineering, University of Electronic Science and Technology of China</p>
        <p>
             <!-- [<a href="https:.pdf">Paper</a>] -->
         </p>
@@ -26,7 +27,8 @@
     <!-- <img src="model.png" style="width:50%"> -->
     <p><font size=5>Abstract</font></p>
     <p>
-    Human speech can be characterized by different components, including semantic content, speaker identity and prosodic information. Significant progress has been made in disentangling representations for semantic content and speaker identity in Automatic Speech Recognition (ASR) and Speaker Recognition (SR) tasks, respectively. However, it is still an open challenging research question to disentangle prosodic information because of the intrinsic association of different attributes, such as timbre and rhythm, and because of the need of unsupervised training schemes for robust large-scale and speaker-independent ASR. The aim of this paper is to address the disentanglement of emotional prosody from speech based on unsupervised reconstruction. Specifically, our proposed model, Prosody2Vec, reconstructs speech by identifying, designing, implementing and integrating three crucial components: (1) a unit encoder that transforms speech signals into discrete units for semantic content, (2) a pre-trained SR model to generate speaker identity embeddings, and (3) a trainable prosody encoder to learn prosody representations. We first pre-train the Prosody2Vec representations on unlabelled emotional speech corpora, then fine-tune the model on specific datasets to perform Speech Emotion Recognition (SER) and Emotional Voice Conversion (EVC) tasks. Both objective and subjective evaluations on the EVC task suggest that Prosody2Vec effectively captures general prosodic features which can be smoothly transferred to other emotional speech. In addition, the SER experiments on the IEMOCAP dataset reveal that the prosody features learned by Prosody2Vec are complementary and beneficial for the performance in widely used speech pre-training models and surpass the state-of-the-art methods when combing Prosody2Vec with HuBERT representations.
+    Human speech can be characterized by different components, including semantic content, speaker identity and prosodic information. Significant progress has been made in disentangling representations for semantic content and speaker identity in Automatic Speech Recognition (ASR) and speaker verification tasks respectively. However, it is still an open challenging research question to extract prosodic information because of the intrinsic association of different attributes, such as timbre and rhythm, and because of the need 
+for supervised training schemes to achieve robust large-scale and speaker-independent ASR. The aim of this paper is to address the disentanglement of emotional prosody from speech based on unsupervised reconstruction. Specifically, we identify, design, implement and integrate three crucial components in our proposed speech reconstruction model Prosody2Vec: (1) a unit encoder that transforms speech signals into discrete units for semantic content, (2) a pretrained speaker verification model to generate speaker identity embeddings, and (3) a trainable prosody encoder to learn prosody representations. We first pretrain the Prosody2Vec representations on unlabelled emotional speech corpora, then fine-tune the model on specific datasets to perform Speech Emotion Recognition (SER) and Emotional Voice Conversion (EVC) tasks. Both objective (weighted and unweighted accuracies) and subjective (mean opinion score) evaluations on the EVC task suggest that Prosody2Vec effectively captures general prosodic features that can be smoothly transferred to other emotional speech. In addition, our SER experiments on the IEMOCAP dataset reveal that the prosody features learned by Prosody2Vec are complementary and beneficial for the performance of widely used speech pretraining models and surpass the state-of-the-art methods when combining Prosody2Vec with HuBERT representations. Some audio samples can be found on our demo website.
     </p>
 </div>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -1015,7 +1017,7 @@
 
 
 <div class="content-container">
-    Acknowledgement: this work was supported in part by the CML, LeCareBot and MoReSpace Projects funded by the DFG and the Major Scientific Project of Zhejiang Lab under Grant No.2020KB0AC01.
+    Acknowledgement: this work was supported in part by the CML, LeCareBot and MoReSpace Projects funded by the DFG, the Major Scientific Project of Zhejiang Lab under Grant (No. 2020KB0AC01), and Youth Foundation Project of Zhejiang Lab (No. 111011-AA2301).
 </div>
 </body>
 </html>
