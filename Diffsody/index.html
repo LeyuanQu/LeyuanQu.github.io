@@ -25,7 +25,8 @@
 </div>
 <div class="content-container">
     <!-- <img src="model.png" style="width:50%"> -->
-    <p><font size=5>Abstract</font></p>
+    <!-- <p><font size=5>Abstract</font></p> -->
+    <div class="content-title">Abstract</div>
     <p>
     Prosody plays a fundamental role in human speech and communication, facilitating intelligibility and conveying emotional and cognitive states. Extracting accurate prosodic information from speech is vital for building assistive technology, such as controllable speech synthesis, speaking style transfer, and speech emotion recognition. However, it is challenging to disentangle speaker-independent prosodic representations since prosodic attributes, such as intonation, excessively entangle with speaker-specific attributes, e.g. pitch. In this paper, we propose a novel model, called Diffsody, to disentangle and refine prosody representations. (1) To disentangle prosodic representations, we leverage the expressive generative ability of a diffusion model by conditioning it on quantified semantic information and pretrained speaker embeddings. Additionally, a prosody encoder automatically learns prosody representations used for spectrogram reconstruction in an unsupervised fashion. (2) To refine and learn speaker-invariant prosody representations, a scheduled Gradient Reversal Layer (sGRL) is proposed and integrated into the prosody encoder of Diffsody. We thoroughly evaluate Diffsody through qualitative and quantitative means. t-SNE visualization and speaker verification experiments demonstrate the efficacy of the sGRL method in preventing speaker-specific information leakage. Experimental results on speaker-independent Speech Emotion Recognition (SER) and Automatic Depression Detection (ADD) tasks demonstrate that Diffsody can efficiently factorize speaker-independent prosody representations, resulting in a significant boost in SER and ADD. In addition, Diffsody synergistically integrates with the semantic representation model HuBERT, which leads to a discernibly elevated performance, outperforming contemporary methods in both SER and ADD tasks. Furthermore, the Diffsody model exhibits promising potential for various practical applications, such as voice or emotion conversion. 
     </p>
@@ -119,8 +120,10 @@
     <div class="content-title">Comparison of GRL and sGRL on Voice Cloning</div>
 
     <p>
-    The refinement module helps the prosody encoder to capture and reconstruct more variants on prosody.
+     Diffsody can perform voice cloning by directly replacing the speaker encoder inputs with a differnet voice. Our proposed sGRL can effectively prevent speaker information leaky and guarantee the speaker information only learned from the speaker encoder.
     </p>
+
+
 
     <!-- style="table-layout:fixed;" -->
     <!-- style="width:90%" -->
@@ -179,7 +182,7 @@
             <td>
                 <div id="sgrlrefinement"></div>
                 <button style="width:180px" id="grl2angryheader133" class="play-button-demo btn btn-primary" onclick="grl2angryheader133.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var grl2angryheader133 = WaveSurfer.create({ container: '#sgrltrefinement', waveColor: 'violet', progressColor: 'purple' });
+                <script> var grl2angryheader133 = WaveSurfer.create({ container: '#sgrlrefinement', waveColor: 'violet', progressColor: 'purple' });
                     grl2angryheader133.load('./images/sgrl.wav'); </script>
            </td>
             <td>
@@ -204,42 +207,19 @@
 
 <div class="content-container">
     <script src="wavesurfer.js"></script>
-    <div class="content-title">Emotion Style Transfer</div>
+    <div class="content-title">Speaking Style Transfer</div>
 
     <p>
-    EmoAug generates new emotional data (second row) by transferring prosodic attributes—such as stress, rhythm, and intensity—from a reference utterance (first row), while retaining the original utterance's semantic content.
+    When representing style reference inputs to the prosody encoder, we can transfer the given styles to original speech while keeping the voice unchanged.
     </p>
 
     <!-- style="table-layout:fixed;" -->
     <!-- style="width:90%" -->
     <table  border="1" class="inlineTable">
         <tr>
-            <th>Original</th>
-            <th>Reference</th>
-            <td>
-                <div id="neutral2angry12"></div>
-                <button style="width:180px" id="neutral2angryheader12" class="play-button-demo btn btn-primary" onclick="neutral2angryheader12.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2angryheader12 = WaveSurfer.create({ container: '#neutral2angry12', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader12.load('./Audios/references/Ses01F_impro01_M013.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2angry13"></div>
-                <button style="width:180px" id="neutral2angryheader13" class="play-button-demo btn btn-primary" onclick="neutral2angryheader13.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2angryheader13 = WaveSurfer.create({ container: '#neutral2angry13', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader13.load('./Audios/references/Ses01M_impro01_M025.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2angry14"></div>
-                <button style="width:180px" id="neutral2angryheader14" class="play-button-demo btn btn-primary" onclick="neutral2angryheader14.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2angryheader14 = WaveSurfer.create({ container: '#neutral2angry14', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader14.load('./Audios/references/Ses01M_impro04_M018.wav'); </script>
-           </td>
-            <td>
-                <div id="neutral2angry15"></div>
-                <button style="width:180px" id="neutral2angryheader15" class="play-button-demo btn btn-primary" onclick="neutral2angryheader15.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
-                <script> var neutral2angryheader15 = WaveSurfer.create({ container: '#neutral2angry15', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader15.load('./Audios/references/Ses01M_impro05_M028.wav'); </script>
-           </td>
+            <th>Original Audio</th>
+            <th>Reference Style</th>
+            <th>Generated Audio</th>
         </tr>
 
         <tr>
@@ -247,32 +227,39 @@
                 <div id="neutral2angry21"></div>
                 <button style="width:180px" id="neutral2angryheader21" class="play-button-demo btn btn-primary" onclick="neural2angrywavsurfer21.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neural2angrywavsurfer21 = WaveSurfer.create({ container: '#neutral2angry21', waveColor: 'violet', progressColor: 'purple' });
-                    neural2angrywavsurfer21.load('./Audios/Ses01F_impro01_M011.wav'); </script>
+                    neural2angrywavsurfer21.load('./images/style_transfer/0012_000353-raw.wav'); </script>
            </td>
-            <th>Converted</th>
             <td>
                 <div id="neutral2angry22"></div>
                 <button style="width:180px" id="neutral2angryheader22" class="play-button-demo btn btn-primary" onclick="neural2angrywavsurfer22.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neural2angrywavsurfer22 = WaveSurfer.create({ container: '#neutral2angry22', waveColor: 'violet', progressColor: 'purple' });
-                    neural2angrywavsurfer22.load('./Audios/Ses01F_impro01_M011-Ses01F_impro01_M013-ang.wav'); </script>
+                    neural2angrywavsurfer22.load('./images/style_transfer/0012_000353-0013_000362-ref.wav'); </script>
            </td>
+            <td>
+                <div id="neutral2angry23"></div>
+                <button style="width:180px" id="neutral2angryheader23" class="play-button-demo btn btn-primary" onclick="neural2angrywavsurfer23.playPause()" style="height:200px:width:2000px;"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var neural2angrywavsurfer23 = WaveSurfer.create({ container: '#neutral2angry23', waveColor: 'violet', progressColor: 'purple' });
+                    neural2angrywavsurfer23.load('./images/style_transfer/0012_00035-gene-200-ft-6225k.wav'); </script>
+           </td>
+        </tr>
+        <tr>
             <td>
                 <div id="neutral2angry23"></div>
                 <button style="width:180px" id="neutral2angryheader23" class="play-button-demo btn btn-primary" onclick="neutral2angryheader23.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neutral2angryheader23 = WaveSurfer.create({ container: '#neutral2angry23', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader23.load('./Audios/Ses01F_impro01_M011-Ses01M_impro01_M025-ang.wav'); </script>
+                    neutral2angryheader23.load('./images/style_transfer/0015_000012-raw.wav'); </script>
            </td>
             <td>
                 <div id="neutral2angry24"></div>
                 <button style="width:180px" id="neutral2angryheader24" class="play-button-demo btn btn-primary" onclick="neutral2angryheader24.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neutral2angryheader24 = WaveSurfer.create({ container: '#neutral2angry24', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader24.load('./Audios/Ses01F_impro01_M011-Ses01M_impro04_M018-ang.wav'); </script>
+                    neutral2angryheader24.load('./images/style_transfer/0015_000012-0017_000396-ref.wav'); </script>
            </td>
             <td>
                 <div id="neutral2angry25"></div>
                 <button style="width:180px" id="neutral2angryheader25" class="play-button-demo btn btn-primary" onclick="neutral2angryheader25.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
                 <script> var neutral2angryheader25 = WaveSurfer.create({ container: '#neutral2angry25', waveColor: 'violet', progressColor: 'purple' });
-                    neutral2angryheader25.load('./Audios/Ses01F_impro01_M011-Ses01M_impro05_M028-ang.wav'); </script>
+                    neutral2angryheader25.load('./images/style_transfer/0015_000012-gene-200-ft-6225k.wav'); </script>
            </td>
         </tr>
 
